@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".story.AddNewStoryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/title_previewImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/title_preview_image"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/view_previewImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_previewImage"
+            app:srcCompat="@drawable/ic_baseline_image_24"/>
+
+        <Button
+            android:id="@+id/button_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/cam"
+            android:drawableLeft="@drawable/ic_baseline_photo_camera_24"
+            app:layout_constraintStart_toStartOf="@+id/view_previewImage"
+            app:layout_constraintEnd_toStartOf="@+id/button_galery"
+            app:layout_constraintTop_toBottomOf="@+id/view_previewImage"/>
+
+        <Button
+            android:id="@+id/button_galery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/gallery"
+            android:drawableLeft="@drawable/ic_baseline_photo_album_24"
+            app:layout_constraintStart_toEndOf="@+id/button_camera"
+            app:layout_constraintEnd_toEndOf="@+id/view_previewImage"
+            app:layout_constraintTop_toTopOf="@+id/button_camera"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/location_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loc"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_camera"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_descriptionImage"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:layout_constraintStart_toStartOf="@+id/view_previewImage"
+            app:layout_constraintEnd_toEndOf="@+id/view_previewImage"
+            app:layout_constraintTop_toBottomOf="@+id/location_switch">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_description_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:ems="10"
+                android:lines="5"
+                android:maxLines="7"
+                android:hint="@string/form_desc"
+                android:inputType="textMultiLine"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/upload"
+            android:drawableLeft="@drawable/ic_baseline_file_upload_24"
+            app:layout_constraintStart_toStartOf="@id/view_previewImage"
+            app:layout_constraintEnd_toEndOf="@id/view_previewImage"
+            app:layout_constraintTop_toBottomOf="@+id/input_descriptionImage"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

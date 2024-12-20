@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="copyright">© Izzudin Adian Khusaini</string>
+    <string name="title_welcome_page">Welcome to StoryApp</string>
+    <string name="message_welcome_page">A place for you to share your StoryApp</string>
+    <string name="login">Login</string>
+    <string name="register">SignIn</string>
+    <string name="title_login_page">Ready to share your StoryApp?</string>
+    <string name="message_login_page">Please fill the blank</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="title_register_page">Please fill the blank</string>
+    <string name="name">Name</string>
+    <string name="form_name">Enter your name</string>
+    <string name="form_email">Enter your E-mail</string>
+    <string name="form_password">Enter your password</string>
+    <string name="description">Description</string>
+    <string name="logout">Logout</string>
+    <string name="fetchedSuccess">Fetch Success</string>
+    <string name="failureMessage">Response not Found</string>
+    <string name="notFound">Not Found</string>
+    <string name="title_preview_image">Preview</string>
+    <string name="cam">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="loc">Turn On Location</string>
+    <string name="title_decriptionImage">Description</string>
+    <string name="form_desc">type some caption</string>
+    <string name="upload">Upload</string>
+    <string name="maps">Maps</string>
+</resources>

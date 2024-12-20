@@ -1,0 +1,64 @@
+1. LoginViewModelTest
+	
+- Ketika user berhasil login (postLogin):
+a. Memastikan response user tidak null
+b. Memastikan response user bernilai Result.Success
+c. Memastikan data user yang didapatkan sesuai dengan yang diharapkan
+	
+- Ketika ingin menyimpan data user yang berhasil login ke dataStore (userSave):
+a. Memastikan method userSave di storyRepository benar dipanggil
+
+
+2. MainViewModelTest
+
+- Ketika berhasil mendapatkan data user yang sudah login (getUserToken):
+ a. Memastikan data user yang didapatkan tidak null
+ b. Memastikan data user yang didapatkan dari dataStore sesuai dengan yang diharapkan
+
+- Ketika berhasil mendapatkan list story (getStories):
+ a. Memastikan data list story yang didapatkan tidak null
+ b. Memastikan pengambilan data list story dengan paging 3 sesuai dengan yang diharapkan
+ c. Memastikan jumlah data list story yang didapatkan sesuai dengan yang diharapkan
+ d. Memastikan nama dari story pertama sama dengan data dummy
+	
+- Ketika user berhasil logout (userLogout):
+ a. Memastikan method userLogout di storyRepository benar dipanggil
+
+
+3. StoryMapsViewModelTest
+
+- Ketika berhasil mendapatkan data user yang sudah login (getUserToken):
+ a. Memastikan data user yang didapatkan tidak null
+ b. Memastikan data user yang didapatkan dari dataStore sesuai dengan yang diharapkan
+
+- Ketika berhasil mendapatkan list story dengan lokasi (getStoriesWithLocation):
+ a. Memastikan data story dengan lokasi yang didapatkan tidak null
+ b. Memastikan response data story dengan lokasi bernilai Result.Success
+ c. Memastikan data story dengan lokasi yang didapatkan sesuai dengan yang diharapkan
+ d. Memastikan jumlah data story dengan lokasi sesuai
+
+
+4. RegisterViewModelTest
+
+-Ketika user berhasil register (postRegister):
+a. Memastikan response user tidak null
+b. Memastikan response user bernilai Result.Success
+
+
+5. AddNewStoryViewModelTest
+
+- Ketika user berhasil mengunggah story (uploadImage):
+a. Memastikan response story yang didapatkan tidak null
+b. Memastikan response story bernilai Result.Success
+
+- Ketika berhasil mendapatkan data user yang sudah login (getUserToken):
+a. Memastikan data user yang didapatkan tidak null
+b. Memastikan data user yang didapatkan dari dataStore sesuai dengan yang diharapkan
+
+
+6. StoryDetailViewModelTest
+	
+- Ketika berhasil mendapatkan story (getDetailStories):
+ a. Memastikan data story yang didapatkan tidak null
+ b. Memastikan response data story bernilai Result.Success
+ c. Memastikan data story yang didapatkan sesuai dengan yang diharapkan
